@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+/*cores do projeto alinhadas ao tema "filmes de suspense"*/
+
+:root {
+    --cor1: #2c2b2c;
+    --cor2: #ec1313;
+    --cor3: #ffffff;
+    --cor4: #f01606;
+    --cor5: #242324;
+    --cor6: #a00c0c;
+
+}
+
+/*para os traços das páginas "curiosidades" e "dicas"*/
+
+.divtracos {
+    border: 4px dashed var(--cor4);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*especifico da sessao "sobre nós"*/
+
+.sobrenos {
+    background-color: var(--cor4);
+    color: var(--cor3);
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    width: 800px;
+    height: 450px;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+
+body {
+    background-color: var(--cor1)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+
+/*organizaçao das imagens*/
+
+.imgpi {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: 0, 1px solid;
+    border-radius: 10px;
+}
+
+.imgpi2 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0, 1px solid;
+    float: right;
+}
+
+.imgpi3 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    border: 0, 1px solid;
+    float: left;
+
+}
+
+.ticket {
+    max-width: 200px;
+}
+
+/*logo e menu de naegaçao estao contidos, nesta ordem*/
+
+header {
+    height: 80px;
+    width: 100%;
+    background: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    height: 90%;
+}
+
+.menu li {
+    display: inline-block;
+    height: 100%;
+    padding-top: 25px;
+    width: 150px;
+}
+
+.menu li a {
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: 900;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Aplica quando o mouse passa pelo item. */
+
+
+.menu li:hover a,
+.menu li a:hover,
+.menu li:hover {
+    background: var(--cor2);
+    color: var(--cor1);
+
+}
+
+.menu li:hover {
+    border-radius: 10px;
+}
+
+
+/*organizaçao dos textos referentes às imagens*/
+
+.imagemtexto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--cor3);
+    margin-bottom: 50px;
+}
+
+.imagemtexto img {
+    max-width: 45%;
+    height: auto;
+    margin-right: 20px;
+    border: 1px dashed var(--cor4);
+    border-radius: 10px;
+}
+
+.imagemtexto h1,
+.imagemtexto p {
+    flex: 1;
+}
+
+.imagemtextor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    color: var(--cor3);
+    margin-bottom: 50px;
+}
+
+.imagemtextor img {
+    max-width: 45%;
+    height: auto;
+    margin-left: 20px;
+    border: 1px dashed var(--cor4);
+    border-radius: 10px;
+}
+
+.imagemtextor h1,
+.imagemtextor p {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.imagemtext {
+    display: flex;
+    float: inline-start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 500px;
+
+}
+
+.imagemtext2 {
+    display: flex;
+    float: inline-start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 300px;
+
+}
+
+.imagemtext3 {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+    padding-left: 430px;
+    padding-right: 430px;
+    padding-top: 45px;
+
+}
+
+
+
+
+/*utilizado para inserir textos sobre as imagens da página inicial e do item "sobre nós"*/
+
+.divtext {
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--cor3);
+    margin-bottom: 20px;
+
+}
+
+.divtext2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor3);
+    background-color: #242324;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    width: 500px;
+    height: 600px;
+
+}
+
+.divtext3 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor3);
+    background-color: #242324;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    width: 500px;
+    height: 200px;
+
+}
+
+
+
+.intro {
+    font-display: justify-self;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+
+}
+
+
+.intro2 {
+    font-display: justify-self;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: black;
+    margin-top: 250px;
+
+}
+
+/*configuraçoes do container*/
+
+.container {
+    margin: 0 auto;
+    padding: 0 10%;
+    height: 100%;
+    width: 100%;
+
+}
+
+/*Para centralizar os elementos - divs e textos*/
+
+.centralizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor3);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.centralizado2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor3);
+    background: var(--cor4);
+    margin-top: 50px;
+}
+
+.centralizado3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor3);
+    background: var(--cor4);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.centralizado4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor3);
+    background: var(--cor5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+
+}
+
+.centralizado5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor3);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+/*organizaçao dos parágrafos*/
+
+.paragrafo {
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.paragrafo2 {
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.paragrafo3 {
+    display: flex;
+    align-items: right;
+    font-size: 25px;
+    text-align: justify;
+}
+
+/*divs do item curiosidade e modificaçoes para utilizaçao em outras páginas*/
+
+.curiosidades {
+    background-color: var(--cor6);
+    color: var(--cor3);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 14px;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+.curiosidades2 {
+    background-color: var(--cor6);
+    color: var(--cor3);
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.curiosidades3 {
+    background-color: var(--cor6);
+    color: var(--cor3);
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    width: 1000px;
+    height: 200px;
+    font-size: 50px;
+    text-align: justify;
+}
+
+
+.infos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    margin: 20px auto;
+    margin-top: 15px;
+    padding: 50px;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+/*fontes utilizadas e footer: logo e cursiva do "sobre nós", ambas disponíveis no "google fonts"*/
+
+
+.fonte2 {
+    padding-left: 50px;
+    font-family: "Bungee Tint", sans-serif;
+    font: size 100px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fonte3 {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+}
+
+.rooter {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: var(--cor3);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.rooter2 {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: var(--cor3);
+    text-align: center;
+    padding-bottom: 10 px;
+    padding-top: 100px;
+
+}
+
+/*formulario para envio de mensagem*/
+
+.form-container {
+
+    display: block;
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8 px var(--cor3);
+    padding-top: 200 px;
+    margin-left: 200px;
+    flex-wrap: nowrap;
+    width: 1000px;
+    height: auto;
+    max-width: 100%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+button {
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
